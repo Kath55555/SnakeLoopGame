@@ -1,0 +1,62 @@
+/* Estilos globales para el body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Altura de la ventana completa */
+    background-color: #000; /* Fondo del juego */
+    display: flex;
+    justify-content: center; /* Centra horizontal */
+    align-items: center;     /* Centra vertical */
+    overflow: hidden;        /* Evita el desplazamiento con flechas */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+/* Estilos específicos del canvas */
+#workspace {
+    border: 5px solid white;
+    background-color: black;
+    display: block;
+}
+#instrucciones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#popup {
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 0 10px white;
+    margin: 5px 0;
+}
+
+#popup input {
+    padding: 5px;
+    width: 80%;
+    margin: 5px 0;
+}
+
+#popup button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#popup button:hover {
+    background-color: #218838;
+}
