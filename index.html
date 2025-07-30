@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snake Game</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onkeydown="control(event);">
+    <div id="instrucciones">
+        <div id="popup">
+            <h2>¡Bienvenido a <b>🐍Snake Loop!</b></h2>
+            <p>Usa las flechas ↑ ↓ ← → para mover la serpiente.</p>
+            <p>Come la comida 🟥 para sumar puntos.</p>
+            <p>Evita los bordes, tu cuerpo y los 🧱.</p>
+            <p>Cada 50 ptos la velocidad aumenta</p>
+            <label for="nombreJugador">Ingresa tu nombre:</label><br>
+            <input type="text" id="nombreJugador" placeholder="Tu nombre"><br><br>
+            <button onclick="iniciarJuego()">Iniciar juego</button>
+        </div>
+    </div>
+
+    <canvas id="workspace" width="600" height="640"></canvas>
+    <script src="snake.js"></script>
+</body>
+
+</html>
